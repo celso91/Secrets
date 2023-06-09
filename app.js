@@ -22,7 +22,7 @@ async function main() {
         password:String
     });
 
-    const secret = "Thisisourlittlesecret."
+   
 
             userSchema.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: ['password'] });
  
